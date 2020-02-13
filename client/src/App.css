@@ -23,13 +23,6 @@ body {
   flex-wrap: wrap;
 }
 
-.title {
-  font-family: 'Pacifico', cursive;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-}
-
 .card-wrapper {
   width: 14rem;
   height: 16rem;
@@ -40,23 +33,24 @@ body {
   background-color: #eddea4;
   display: flex;
   flex-direction: column;
-  align-items: space-evenly;
+  justify-content: space-between;
   box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.6);
 }
 
 
 .card-name {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   font-size: 1.8rem;
 }
 
 .card-rank {
   font-family: 'lato';
+  font-weight: bold;
   font-size: 0.8rem;
   transform: scaleX(200deg);
 }
 
 .card-team {
   font-family: 'lato';
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }

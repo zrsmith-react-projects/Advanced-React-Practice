@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 
+import Nav from "./components/Nav.js";
 import PlayerCard from "./components/PlayerCard.js";
 
 import './App.css';
