@@ -33,7 +33,6 @@ class App extends Component {
         <div className="App">
           <h1>Hello World</h1>
           <div className="container">
-            <h1 className="title">Top Male Footballers from around the world</h1>
             {this.state.footballers.map(footballer => (
               <PlayerCard key={footballer.id} footballer={footballer}/>
             ))}

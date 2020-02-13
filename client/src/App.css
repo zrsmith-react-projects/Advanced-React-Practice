@@ -31,9 +31,9 @@ body {
 }
 
 .card-wrapper {
-  width: 12rem;
-  height: 14rem;
-  padding: 2%;
+  width: 14rem;
+  height: 16rem;
+  padding: 2.5%;
   border: 5px solid black;
   border-radius: 1rem;
   margin: 2rem;
@@ -41,21 +41,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: space-evenly;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.6);
 }
+
 
 .card-name {
   font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
 }
 
-.card-row {
-  display: flex;
-  justify-content: space-between;
-}
-
 .card-rank {
   font-family: 'lato';
   font-size: 0.8rem;
+  transform: scaleX(200deg);
 }
 
 .card-team {
