@@ -13,7 +13,7 @@ const Nav = () => {
 
     return (
         <nav className="navbar">
-            <h1 className="nav-title">World Ranking of Men's Soccer Players</h1>
+            <h1 className="nav-title">Men's Soccer Players - World Ranking</h1>
             <button onClick={toggleMode} className="btn">{ darkMode ? lightMoon : darkMoon }</button>
         </nav>
     );
