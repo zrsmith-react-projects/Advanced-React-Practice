@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #53dd6c;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background-image:
+  radial-gradient(circle at 100% 150%, #53dd6c 24%, #23ce6b 25%, #23ce6b 28%, #53dd6c 29%, #53dd6c 36%, #23ce6b 36%, #23ce6b 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #53dd6c 24%, #23ce6b 25%, #23ce6b 28%, #53dd6c 29%, #53dd6c 36%, #23ce6b 36%, #23ce6b 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #23ce6b 10%, #53dd6c 11%, #53dd6c 23%, #23ce6b 24%, #23ce6b 30%, #53dd6c 31%, #53dd6c 43%, #23ce6b 44%, #23ce6b 50%, #53dd6c 51%, #53dd6c 63%, #23ce6b 64%, #23ce6b 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #23ce6b 5%, #53dd6c 6%, #53dd6c 15%, #23ce6b 16%, #23ce6b 20%, #53dd6c 21%, #53dd6c 30%, #23ce6b 31%, #23ce6b 35%, #53dd6c 36%, #53dd6c 45%, #23ce6b 46%, #23ce6b 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #23ce6b 5%, #53dd6c 6%, #53dd6c 15%, #23ce6b 16%, #23ce6b 20%, #53dd6c 21%, #53dd6c 30%, #23ce6b 31%, #23ce6b 35%, #53dd6c 36%, #53dd6c 45%, #23ce6b 46%, #23ce6b 49%, transparent 50%, transparent);
+  background-size:100px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-wrapper {
+  width: 12rem;
+  height: 14rem;
+  padding: 2%;
+  border: 5px solid black;
+  border-radius: 1rem;
+  margin: 2rem;
+  background-color: #eddea4;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+
+.card-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rank {
+  font-family: 'lato';
+  font-size: 0.8rem;
+}
+
+.card-team {
+  font-family: 'lato';
+  font-size: 1.8rem;
 }
