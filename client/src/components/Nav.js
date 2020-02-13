@@ -2,7 +2,7 @@ import React from "react";
 import {useDarkMode} from "../hooks/useDarkMode.js";
 
 const Nav = () => {
-    const [darkMode, setDarkMode] = useDarkMode(false);
+    const [darkMode, setDarkMode] = useDarkMode('Dark Mode', false);
     const toggleMode = e => {
         e.preventDefault();
         setDarkMode(!darkMode);
@@ -10,8 +10,8 @@ const Nav = () => {
 
     return (
         <nav className="navbar">
-            <h1>World Ranking of Men's Soccer Players</h1>
-            <button onClick={toggleMode} className="btn"><span role="dark mode / light mode moon emojis">🌝 🌚</span></button>
+            <h1 className="nav-title">World Ranking of Men's Soccer Players</h1>
+            <button onClick={toggleMode} className="btn"><span role="img" aria-label="dark mode / light mode moon emojis">🌝 🌚</span></button>
         </nav>
     );
 };
