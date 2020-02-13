@@ -8,10 +8,13 @@ const Nav = () => {
         setDarkMode(!darkMode);
     };
 
+    const lightMoon = <span role="img" aria-label="light mode moon emoji">🌝</span>;
+    const darkMoon = <span role="img" aria-label="dark mode moon emoji">🌚</span>
+
     return (
         <nav className="navbar">
             <h1 className="nav-title">World Ranking of Men's Soccer Players</h1>
-            <button onClick={toggleMode} className="btn"><span role="img" aria-label="dark mode / light mode moon emojis">🌝 🌚</span></button>
+            <button onClick={toggleMode} className="btn">{ darkMode ? lightMoon : darkMoon }</button>
         </nav>
     );
 };

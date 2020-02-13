@@ -38,6 +38,7 @@ body {
 
 .nav-title {
   padding-left: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -49,6 +50,7 @@ button {
   font-family: 'Pacifico';
   font-size: 2rem;
   background-color: #eddea4;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.6);
 }
 
 .container {
