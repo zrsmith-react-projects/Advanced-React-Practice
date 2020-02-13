@@ -32,7 +32,7 @@ class App extends Component {
   render() {  
       return (
         <div className="App">
-          <h1>Hello World</h1>
+          <Nav />
           <div className="container">
             {this.state.footballers.map(footballer => (
               <PlayerCard key={footballer.id} footballer={footballer}/>
