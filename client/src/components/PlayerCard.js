@@ -11,9 +11,9 @@ const PlayerCard = props => {
       <p>Rank: {props.player.rank}</p>
       <p>Team: {props.player.team}</p> */}
 
-      <p>{name}</p>
-      <p>{rank}</p>
-      <p>{team}</p>
+      <p className="card-name">{name}</p>
+      <p className="card-rank">World Ranking: {rank}</p>
+      <p className="card-team">Team: {team}</p>
     </div>
   );
 };
