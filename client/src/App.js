@@ -4,6 +4,7 @@ import axios from "axios";
 
 import "./App.css";
 import PlayerCard from "./components/PlayerCard";
+import Nav from "./components/Nav.js";
 
 class App extends Component {
   constructor() {
@@ -28,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <Nav />>
         {this.state.players.map(player => (
           <PlayerCard key={player.id} player={player} />
         ))}
