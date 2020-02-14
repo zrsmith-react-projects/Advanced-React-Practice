@@ -11,6 +11,19 @@ class App extends Component {
       players: []
     };
   }
+
+  componentDidMount() {
+    axios
+      .get("http://localhost:5700/api/footballers")
+      .then(res => {
+        console.log("footballers", res.data);
+        this.setState({ players: res.data });
+      })
+      .catch(error => {
+        console.log("This is an error", error);
+      });
+  }
+
   render() {
     return (
       <div className="App">
